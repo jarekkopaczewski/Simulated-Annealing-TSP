@@ -1,0 +1,4 @@
+Nazwa pliku,czas[s],czas[ms],ilosc testow,Blad, min, sredni, max, poprawny
+tsp_6_1,1.07549,1.08e+03,1, 0, 132, 132, 132, 132
+tsp_6_2,1.03,1.03e+03,1, 0, 80, 80, 80, 80
+tsp_10,3.69,3.69e+03,1, 0, 212, 212, 212, 212

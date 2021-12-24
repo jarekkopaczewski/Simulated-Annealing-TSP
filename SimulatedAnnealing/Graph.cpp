@@ -13,7 +13,7 @@ Graph::Graph()
 	matrix = nullptr;
 }
 
-Graph::Graph(int vertexNumber)																// konstruktor incializujący parametry
+Graph::Graph(int vertexNumber)																
 {
 	this->vertexNumber = vertexNumber;
 	this->edgeNumber = (vertexNumber * (vertexNumber - 1)) / 2;
@@ -31,7 +31,7 @@ vector<vector<int>> Graph::getVector()
 	return vecMatrix;
 }
 
-void Graph::setMatrix(int** matrix)															// wczytanie tablicy do grafu
+void Graph::setMatrix(int** matrix)															
 {
 	if (vertexNumber != 0) clearMatrix();
 	this->matrix = matrix;
@@ -47,7 +47,7 @@ void Graph::setMatrix(int** matrix)															// wczytanie tablicy do grafu
 			vecMatrix[i][j] = matrix[i][j];
 }
 
-void Graph::showMatrix()																	// wyświetlanie macierzy
+void Graph::showMatrix()																	
 {
 	cout << endl;
 	cout << "\t\t\t\t\t    ";

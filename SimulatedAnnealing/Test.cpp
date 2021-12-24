@@ -47,15 +47,15 @@ void Test::runTest()
         int currentMax = 0;
         int sumOfTest = 0;
 
-        cout << "T0 = " << size * 30 << endl;
+        /*cout << "T0 = " << size * 30 << endl;
         cout << "Chlodzenie = 0.9999" << endl;
         cout << "Dlugosc ery = 50" << endl;
-        cout << "T koncowa =  0.01" << endl;
+        cout << "T koncowa =  0.01" << endl;*/
 
         for (int i = 0; i < initValues[k].first[0]; i++)
         {
             start = read_QPC();
-            currentMin = sim.SimAnnealing::findSolution(graph, initValues[0].first[1], 0);
+            currentMin = sim.SimAnnealing::findSolution(graph, initValues[0].first[1], 1);
             elapsed = read_QPC() - start;
             sum += elapsed;
             if (currentMin < result)

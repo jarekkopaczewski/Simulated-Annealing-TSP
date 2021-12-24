@@ -41,7 +41,7 @@ int SimAnnealing::findSolution(Graph* graph, int type, int coolingType)
 	double absoluteTemperature = 0.01; 
 	double K = 50;
 	double P = 0.0;
-	double a = 1.0, b = 0.00001;
+	double a = 1.0, b = 0.000005;
 
 	vector <int> tempMinPermutation(size, -1);
 	int tempMin = INT_MAX;
@@ -114,10 +114,7 @@ void SimAnnealing::invert(vector<int>& tempPermutation)
 		secondRandomCityIndex--;
 		firstRandomCityIndex--;
 	}
-
-	vector<int> rev;
-	vector<int> rev2;
-
+	vector<int> rev, rev2;
 	rev.insert(rev.begin(), tempPermutation.begin(), tempPermutation.begin() + firstRandomCityIndex);
 	rev2.insert(rev2.begin(), tempPermutation.begin() + firstRandomCityIndex, tempPermutation.begin() + secondRandomCityIndex + 1);
 	reverse(rev2.begin(), rev2.end());
@@ -135,25 +132,18 @@ void  SimAnnealing::insert(vector<int>& tempPermutation)
 	if (firstRandomCityIndex != secondRandomCityIndex)
 	{
 		vector<int> temp;
-
 		for (int i = 0; i < tempPermutation.size(); i++)
 		{
-
 			if (i == firstRandomCityIndex)
 			{
 				temp.push_back(tempPermutation[secondRandomCityIndex]);
 				temp.push_back(tempPermutation[firstRandomCityIndex]);
 			}
 			else if (i < secondRandomCityIndex)
-			{
 				temp.push_back(tempPermutation[i]);
-			}
 			else if (i > secondRandomCityIndex)
-			{
 				temp.push_back(tempPermutation[i]);
-			}
 		}
-
 		tempPermutation = temp;
 	}
 }

@@ -1,4 +1,4 @@
-25 1     mix_geo
+25 1     output
 1 132    tsp_6_1
 1 80     tsp_6_2
 1 212    tsp_10 
