@@ -13,7 +13,7 @@ Graph::Graph()
 	matrix = nullptr;
 }
 
-Graph::Graph(int vertexNumber)																
+Graph::Graph(int vertexNumber)																// konstruktor incializujący parametry
 {
 	this->vertexNumber = vertexNumber;
 	this->edgeNumber = (vertexNumber * (vertexNumber - 1)) / 2;
@@ -31,7 +31,7 @@ vector<vector<int>> Graph::getVector()
 	return vecMatrix;
 }
 
-void Graph::setMatrix(int** matrix)															
+void Graph::setMatrix(int** matrix)															// wczytanie tablicy do grafu
 {
 	if (vertexNumber != 0) clearMatrix();
 	this->matrix = matrix;
@@ -47,7 +47,7 @@ void Graph::setMatrix(int** matrix)
 			vecMatrix[i][j] = matrix[i][j];
 }
 
-void Graph::showMatrix()																	
+void Graph::showMatrix()																	// wyświetlanie macierzy
 {
 	cout << endl;
 	cout << "\t\t\t\t\t    ";
@@ -86,6 +86,9 @@ void Graph::showMatrix()
 	}
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY);
 	cout << "\n\n";
+	/*cout << "\nWcisnij dowolny klawisz..." << endl;
+	int znak = _getch();*/
+}
 
 int** Graph::getGraphMatrix()
 {

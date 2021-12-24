@@ -11,7 +11,7 @@ class Graph
 		void setMatrix(int**);				//ustawia macierz -> wykorzystywane przy wczytywaniu z pliku
 		void showMatrix();					//wyswietlanie macierzy
 		int** getGraphMatrix();				//zwraca macierz
-		int getSize();						
+		int getSize();						//zwraca wielkosc - iloœæ wierzcho³ków
 		int getBasicCycle();
 		vector<vector<int>> getVector();
 	private:
