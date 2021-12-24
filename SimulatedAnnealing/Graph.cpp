@@ -86,9 +86,6 @@ void Graph::showMatrix()
 	}
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY);
 	cout << "\n\n";
-	/*cout << "\nWcisnij dowolny klawisz..." << endl;
-	int znak = _getch();*/
-}
 
 int** Graph::getGraphMatrix()
 {
