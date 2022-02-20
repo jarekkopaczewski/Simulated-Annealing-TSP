@@ -25,7 +25,6 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 ## Built With
 
 * [C++](https://isocpp.org/)
-* [Juce](https://juce.com/)
 
 ## Save parameters
 
