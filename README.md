@@ -37,10 +37,30 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 
 ## Timing
 
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_1.png" width="500"/>
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_2.png" width="500"/>
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_3.png" width="500"/>
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_4.png" width="500"/>
+```cpp
+
+long long int frequency, start = 0, elapsed, sum, size = 0; 
+QueryPerformanceFrequency((LARGE_INTEGER*)&frequency); 
+
+long long int Test::read_QPC() 
+{ 
+	LARGE INTEGER count; 
+	QueryPerformanceCounter(&count); 
+	return((long long int)count.QuadPart); 
+}
+
+for (int i = 0; i < initvalues[k].first[0]; i++) 
+{
+	start = read_QPC(); 
+	currentMin = sim.SimAnnealing::findSolution(graph, initValues[0].first[1], 0); 
+	elapsed = read_QPC() - start; 
+}
+
+cout << "Sredni czas operacji[s] = " << setprecision(3; << float(sum / float(test))/f << endl; 
+cout << "Sredni czas operacji[ms] = " << setprecision(3) << float(sum * 1000.0)/ float(test)/f << endl; 
+cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000.0) / float(test)/f << endl << endl; 
+
+```
 
 ## Algorithm
 
