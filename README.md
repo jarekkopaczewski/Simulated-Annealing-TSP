@@ -1,9 +1,8 @@
 # Table of contents
 * [General info](#general-info)
-* [Data structure](#data-structure)
 * [Built With](#built-with)
-* [Save parameters](#save-parameters)
-* [Prepare to play](#prepare-to-play)
+* [Timing](#timing)
+* [Algorithm](#algorithm)
 * [License](#license)
 
 # About The Project
@@ -24,12 +23,6 @@ The algorithm can also choose a solution worse than the current global minimum -
 get out of the local minimum. Boltzmann's formula is used to calculate the probability.
     
 </p>
-
-## Data structure
-
-To achieve a delayed effect I used the circular buffer structure which size depends on from the parameters set by the user.
-
-![Product Name Screen Shot](https://github.com/jarekkopaczewski/TwinEcho/blob/6ff12e2a9b27c65e19132080ee0411574d6aaddc/CircularBuffer.jpg)
 
 ## Built With
 
