@@ -39,9 +39,11 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 
 ```cpp
 
+// varibles
 long long int frequency, start = 0, elapsed, sum, size = 0; 
 QueryPerformanceFrequency((LARGE_INTEGER*)&frequency); 
 
+// read clock function
 long long int Test::read_QPC() 
 { 
 	LARGE INTEGER count; 
@@ -49,6 +51,7 @@ long long int Test::read_QPC()
 	return((long long int)count.QuadPart); 
 }
 
+// testing for loop
 for (int i = 0; i < initvalues[k].first[0]; i++) 
 {
 	start = read_QPC(); 
@@ -56,6 +59,7 @@ for (int i = 0; i < initvalues[k].first[0]; i++)
 	elapsed = read_QPC() - start; 
 }
 
+// console out results
 cout << "Sredni czas operacji[s] = " << setprecision(3; << float(sum / float(test))/f << endl; 
 cout << "Sredni czas operacji[ms] = " << setprecision(3) << float(sum * 1000.0)/ float(test)/f << endl; 
 cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000.0) / float(test)/f << endl << endl; 
