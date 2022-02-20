@@ -42,10 +42,43 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 <img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_3.png" width="500"/>
 <img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_4.png" width="500"/>
 
-## Prepare to play
+## Algorithm
 
 ```cpp
+while(temperature > absoluteTemperature)
+	{
+		int era = 0;
+		tempMinPermutation = permutation;
 
+		while(era < K)
+		{
+			tempPermutation = tempMinPermutation;
+			if (type == 1)
+				invert(tempPermutation);
+			else if (type == 2)
+				insert(tempPermutation);
+			else
+				swapp(tempPermutation);
+			
+			deltaDistance = getTourLength(tempPermutation);
+
+			if ((deltaDistance < tempMin) ? 1 : exp(-(deltaDistance - tempMin) / temperature) > dis(e))
+			{
+				tempMin = deltaDistance;
+				swap(tempMinPermutation, tempPermutation);
+			}
+			era++;
+		}
+
+		if ((tempMin < distance) ? 1 : exp(-(tempMin - distance) / temperature) > dis(e))
+		{
+			distance = tempMin;
+			swap(tempMinPermutation, permutation);
+		}
+
+		temperature = coolingType == 1 ? temperature / (a + b * K) : temperature * coolingRate;
+	}
+	return distance ;
 ```
 
 ## License
