@@ -11,10 +11,12 @@
 ## General info
 
 <p class="text-justify">
-This project is a simple VST3 delay effect that works separately on the left and right channel. You can use different delay time on left and right channel, which can be also synchronized to tempo of the song by setting rhythmic division.   There is also a bunch of additional effect like tap echo or flanger.
+The method used to design the algorithm solving the given problem is a heuristic algorithm
+called Simulated Annealing, which consists of searching consecutive problem spaces in order to find
+the best solution. In the case of the combinatorial problem, it will search successive permutations close to the
+to the currently minimal one. In contrast to the previously implemented solutions, the end condition is not
+finding the optimal solution but reaching the temperature set by the user.
 </p>
-
-![Product Name Screen Shot](https://github.com/jarekkopaczewski/TwinEcho/blob/e82460d70e3dbb9e6220f74dcf8eb0781a36adcc/TwinDelay.png)
 
 ## Data structure
 
