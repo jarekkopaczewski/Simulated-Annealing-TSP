@@ -98,7 +98,7 @@ cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000
 	return distance ;
 ```
 ## Ini file
-[ number of tests ; result ; file name ]
+/number of tests ; result ; file name/
 <img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/39f29c3f45d6113c4c68bb2fcf75b1d27139e434/ini.png" width="300"/>
 
 ## Results 
