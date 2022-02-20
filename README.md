@@ -101,11 +101,11 @@ cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000
 ## Results 
 ### Greedy vs steepest
 
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/b99f54ececcbb3fa15f81003e0d51eb24e74a593/greedy_vs_steepest.png" width="500"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/b99f54ececcbb3fa15f81003e0d51eb24e74a593/greedy_vs_steepest.png" width="700"/>
 
 ### Choice of neighbor
 
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/b99f54ececcbb3fa15f81003e0d51eb24e74a593/neighbor.png" width="500"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/b99f54ececcbb3fa15f81003e0d51eb24e74a593/neighbor.png" width="700"/>
 
 ## License
 
