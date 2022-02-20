@@ -37,7 +37,10 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 
 ## Timing
 
-<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_1.png" width="300"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_1.png" width="800"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_2.png" width="800"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_3.png" width="800"/>
+<img src="https://github.com/jarekkopaczewski/Simulated-Annealing-TSP/blob/07b80d9df439ade97260a67cdc2b4e72a833fe76/time_4.png" width="800"/>
 
 ## Prepare to play
 
