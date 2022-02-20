@@ -18,6 +18,14 @@ to the currently minimal one. In contrast to the previously implemented solution
 finding the optimal solution but reaching the temperature set by the user.
 </p>
 
+The algorithm works in an iterative manner. Its entire operation is divided into eras, whose length is determined by the user. In each era, the search starts from the current global minimum, to which
+modifications are introduced. In this way, the environment of the current solution is checked in order to find a better solution.
+After the end of an era, the probability of benefit of starting the next era from the minimum found is calculated.
+The algorithm can also choose a solution worse than the current global minimum - thanks to this we are able to
+get out of the local minimum. Boltzmann's formula is used to calculate the probability.
+
+Translated with www.DeepL.com/Translator (free version)
+
 ## Data structure
 
 To achieve a delayed effect I used the circular buffer structure which size depends on from the parameters set by the user.
