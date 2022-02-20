@@ -45,7 +45,7 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 ## Algorithm
 
 ```cpp
-while(temperature > absoluteTemperature)
+	while(temperature > absoluteTemperature)
 	{
 		int era = 0;
 		tempMinPermutation = permutation;
