@@ -27,6 +27,7 @@ get out of the local minimum. Boltzmann's formula is used to calculate the proba
 ## Built With
 
 * [C++](https://isocpp.org/)
+* [Visual Studio](https://visualstudio.microsoft.com/pl/)
 
 ## Timing
 
