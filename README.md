@@ -62,7 +62,7 @@ cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000
 ## Algorithm
 
 ```cpp
-	while(temperature > absoluteTemperature)
+while(temperature > absoluteTemperature)
 	{
 		int era = 0;
 		tempMinPermutation = permutation;
@@ -95,7 +95,7 @@ cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000
 
 		temperature = coolingType == 1 ? temperature / (a + b * K) : temperature * coolingRate;
 	}
-	return distance ;
+	return distance;
 ```
 ## Ini file
 
