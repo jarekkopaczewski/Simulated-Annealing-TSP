@@ -63,39 +63,39 @@ cout << "Sredni czas operacji [us] = " << setprecision(3) << float(sum * 1000000
 
 ```cpp
 while(temperature > absoluteTemperature)
-	{
-		int era = 0;
-		tempMinPermutation = permutation;
+{
+    int era = 0;
+    tempMinPermutation = permutation;
 
-		while(era < K)
-		{
-			tempPermutation = tempMinPermutation;
-			if (type == 1)
-				invert(tempPermutation);
-			else if (type == 2)
-				insert(tempPermutation);
-			else
-				swapp(tempPermutation);
-			
-			deltaDistance = getTourLength(tempPermutation);
+    while(era < K)
+    {
+        tempPermutation = tempMinPermutation;
+        if (type == 1)
+            invert(tempPermutation);
+        else if (type == 2)
+            insert(tempPermutation);
+        else
+            swapp(tempPermutation);
+        
+        deltaDistance = getTourLength(tempPermutation);
 
-			if ((deltaDistance < tempMin) ? 1 : exp(-(deltaDistance - tempMin) / temperature) > dis(e))
-			{
-				tempMin = deltaDistance;
-				swap(tempMinPermutation, tempPermutation);
-			}
-			era++;
-		}
+        if ((deltaDistance < tempMin) ? 1 : exp(-(deltaDistance - tempMin) / temperature) > dis(e))
+        {
+            tempMin = deltaDistance;
+            swap(tempMinPermutation, tempPermutation);
+        }
+        era++;
+    }
 
-		if ((tempMin < distance) ? 1 : exp(-(tempMin - distance) / temperature) > dis(e))
-		{
-			distance = tempMin;
-			swap(tempMinPermutation, permutation);
-		}
+    if ((tempMin < distance) ? 1 : exp(-(tempMin - distance) / temperature) > dis(e))
+    {
+        distance = tempMin;
+        swap(tempMinPermutation, permutation);
+    }
 
-		temperature = coolingType == 1 ? temperature / (a + b * K) : temperature * coolingRate;
-	}
-	return distance;
+    temperature = coolingType == 1 ? temperature / (a + b * K) : temperature * coolingRate;
+}
+return distance;	
 ```
 ## Ini file
 
